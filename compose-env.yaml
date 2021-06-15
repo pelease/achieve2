@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db-achive2-api:
+    image: postgres:13
+    ports:
+    - 5444:5432
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: achive2-api

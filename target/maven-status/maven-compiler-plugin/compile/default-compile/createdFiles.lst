@@ -1,0 +1,6 @@
+com/achive2/demo/service/Achive2Service.class
+com/achive2/demo/repository/Achive2Repository.class
+com/achive2/demo/controller/Achive2Controller.class
+com/achive2/demo/entity/Achive2.class
+com/achive2/demo/DemoApplication.class
+com/achive2/demo/dto/Achive2Dto.class

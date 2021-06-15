@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: achieve2
+  labels:
+    app: achieve2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: achieve2
+  template:
+    metadata:
+      labels:
+        app: achieve2
+    spec:
+      containers:
+        - name: achieve2
+          image: pelease/achieve2:1.0.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATASOURCE_HOST
+              value: 10.77.28.121
