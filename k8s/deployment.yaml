@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: achieve2
-          image: pelease/achieve2:1.0.0
+          image: pelease/achieve2:3.0.0
           ports:
             - containerPort: 8080
           env:
             - name: DATASOURCE_HOST
-              value: 10.77.28.121
+              value: 172.16.2.33
