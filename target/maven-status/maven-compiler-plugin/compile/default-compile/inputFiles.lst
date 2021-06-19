@@ -1,6 +1,6 @@
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/dto/Achive2Dto.java
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/controller/Achive2Controller.java
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/service/Achive2Service.java
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/entity/Achive2.java
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/repository/Achive2Repository.java
-/home/pelease/hse/someTestingRepos/demo/src/main/java/com/achive2/demo/DemoApplication.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/DemoApplication.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/entity/Achive2.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/repository/Achive2Repository.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/service/Achive2Service.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/dto/Achive2Dto.java
+/home/pelease/hse/someTestingRepos/achieve2/src/main/java/com/achive2/demo/controller/Achive2Controller.java

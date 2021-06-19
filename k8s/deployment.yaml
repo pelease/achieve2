@@ -16,9 +16,38 @@ spec:
     spec:
       containers:
         - name: achieve2
-          image: pelease/achieve2:3.0.0
+          image: pelease/achieve2:5.0.0
           ports:
             - containerPort: 8080
+#          env:
+#            - name: DB_HOST
+#              value: 172.16.2.34
+#            - name: DB_NAME
+#                value: achieve2-api
+#            - name: POSTGRES_USER
+#              value: postgres
+#            - name: POSTGRES_PASSWORD
+#              value: postgres
+
           env:
-            - name: DATASOURCE_HOST
-              value: 172.16.2.33
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-conf
+                  key: host
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-conf
+                  key: name
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials
+                  key: postgres_user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-credentials
+                  key: postgres_password
+      nodeName: node-16

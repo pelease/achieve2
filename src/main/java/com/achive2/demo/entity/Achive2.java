@@ -14,8 +14,7 @@ import javax.persistence.Id;
 public class Achive2 {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
 
     private int number;
 

@@ -1,5 +1,16 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://${DB_HOST}:5432/${DB_NAME}
+#    username: {POSTGRES_USER}
+#    password: {POSTGRES_PASSWORD}
+
+
 spring:
   datasource:
-    url: jdbc:postgresql://${DATASOURCE_HOST:localhost}:5444/achive2-api
+    url: jdbc:postgresql://localhost:5444/achive2-api
     username: admin
     password: admin
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
